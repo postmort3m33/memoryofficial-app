@@ -1,0 +1,65 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet">
+</head>
+
+<!-- Header -->
+<header class="scene">
+    <article class="content">
+        <nav class="navbar">
+
+            <!-- Hamburger Menu -->
+            <a href="javascript:void(0);" class="toggle-button" (click)="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+
+            <!-- Social Media Links -->
+            <div id="socialmedia">
+                <ul class="group">
+                    <li><a href="https://www.facebook.com/MemoryTXOfficial"><img class="icon"
+                                src="assets/images/facebook.png" alt="icon for facebook"></a></li>
+                    <li><a href="https://www.youtube.com/@MemoryTXOfficial"><img class="icon"
+                                src="assets/images/youtube.png" alt="icon for youtube"></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/memorytxofficial"><img class="icon"
+                                src="assets/images/instagram.png" alt="icon for instagram"></a></li>
+                    <li><a href="https://www.tiktok.com/@memorytxofficial"><img class="icon"
+                                src="assets/images/tiktok.png" alt="icon for tiktok"></a></li>
+                    <li><a href="https://linktr.ee/memorytxofficial"><img class="icon" src="assets/images/linktree.png"
+                                alt="icon for linktree"></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Navbar Links for the Hamburger Menu -->
+        <div class="navbar-links" [ngClass]="{'active': menuActive}">
+            <ul>
+                <li><a routerLink="home" (click)="closeMenu()">Home</a></li>
+                <li><a routerLink="epk" (click)="closeMenu()">EPK</a></li>
+                <li><a routerLink="contact" (click)="closeMenu()">Contact</a></li>
+            </ul>
+        </div>
+
+    </article>
+</header>
+
+<router-outlet></router-outlet>
+
+<footer>
+    <div class="scene">
+        <h4>Memory Official &copy; 2024</h4>
+    </div>
+</footer>

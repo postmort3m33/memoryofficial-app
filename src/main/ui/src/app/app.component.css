@@ -1,0 +1,164 @@
+/* Header Styling */
+header {
+    position: fixed;
+    top: 0%;
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+    /* border: 2px solid white; /**/
+}
+
+header.scene {
+    width: 100%;
+    background-color: black;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.666);
+    /* X offset, Y offset, blur, shadow color */
+    /* border: 2px solid red; /* */
+}
+
+header.scene .content {
+    max-width: 50%;
+    margin: auto;
+    /* border: 2px solid yellow; /* */
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px auto;
+    /* border: 2px solid green; /* */
+}
+
+#socialmedia ul.group {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0 0;
+    margin: 0 auto;
+    /* border: 2px solid blue; /* */
+}
+
+#socialmedia ul.group li a img.icon {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s;
+}
+
+#socialmedia ul.group li a img.icon:hover {
+    transform: scale(1.2);
+}
+
+
+/* Hamburger Menu Styles */
+.toggle-button {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 3px;
+    /* border: 2px solid blue; /* */
+}
+
+.toggle-button .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+.navbar-links {
+    position: fixed;
+    left: 0%;
+    width: 20%;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    z-index: 1000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.25em;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    background-color: rgb(66, 66, 66);
+    /* background: linear-gradient(to right, rgba(66, 66, 66, .333) 0%, rgba(33, 33, 33, .666) 30%, rgba(33, 33, 33, 1) 99%, rgba(255,255,255,1) 100%); */
+    /* border-top: 1px solid rgba(100,100,100, 0.75); */
+    /* border-right: 1px solid rgba(100,100,100, 0.75); */
+    /* border-bottom: 2px solid rgba(230,230,230,0.66); */
+    visibility: hidden;
+    transition: transform 0.3s ease, visibility 0.2s ease;
+    transform: translateX(-100%);
+    /* Start off-screen to the left */
+
+    box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.666);
+    /* X offset, Y offset, blur, shadow color */
+
+}
+
+.navbar-links.active {
+    visibility: visible;
+    /* Make clickable */
+    transform: translateX(85%);
+    /* Slide into view */
+}
+
+.navbar-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar-links li {
+    padding: 15px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+footer {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:0;
+    width: 100%;
+    background-color: black;
+    /* border: 2px solid green; /* */
+}
+
+footer .scene {
+    text-align: center;
+    /* border: 2px solid green; */
+}
+
+footer h4 {
+    font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    header.scene .content {
+        max-width: 100%;
+    }
+
+    .navbar-links {
+        width: 40%;
+    }
+
+    .navbar-links.active {
+        visibility: visible;
+        /* Make clickable */
+        transform: translateX(0);
+        /* Slide into view */
+    }
+
+    footer h4 {
+        font-weight: 400;
+        font-size: 0.7em;
+    }
+}

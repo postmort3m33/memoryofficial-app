@@ -1,0 +1,101 @@
+/* Globals */
+h1 {
+  font-weight: 800;
+  font-size: 3.5em;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+/* Main Body Wrapper */
+#main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  background-color: black;
+  /* border: 2px solid red; /* */
+}
+
+#main-wrapper .main-body {
+  width: 60%;
+  margin: 20px auto;
+  /*border: 2px solid yellow; /* Add a border to the header */
+}
+
+/* Catagory Container */
+#category-container {
+  position: relative;
+  /* border: 2px solid white; */
+}
+
+#category-container img {
+  max-width:100%;
+  width:100%;
+  height: auto;
+}
+
+#category-container .title {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  /* border: 2px solid white; */
+}
+
+#main-wrapper .content1 {
+  position: relative;
+  width: 100%;
+  margin: 50px auto;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.666);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.836);
+  /* X offset, Y offset, blur, shadow color */
+  /* border: 2px solid blue; /* Add a border to the header */
+}
+
+#main-wrapper .content1 img {
+  max-width: 100%;
+}
+
+#main-wrapper .credits {
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+  h1 {
+    font-weight: 600;
+    font-size: 1.85em;
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: 1.25em;
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: 1em;
+  }
+
+  h4 {
+    font-weight: 400;
+    font-size: 0.7em;
+  }
+
+  #main-wrapper .main-body {
+    width: 80%;
+  }
+}

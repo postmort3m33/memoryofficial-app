@@ -1,0 +1,53 @@
+<!-- Fixed Background -->
+<div id="fixed-bg">
+  <br>
+  <br>
+  <video autoplay muted loop class="bg-video">
+    <source src="assets/videos/home-page-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <!-- <img src="assets/images/band-background2.jpg" alt="band on stage"> -->
+</div>
+
+/* Fixed Background */
+#fixed-bg {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left:0;
+  background-color: black;
+  border: 2px solid blue;
+  /*
+  background-image: url('../../../public/assets/images/band-background2.jpg');
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  */
+}
+
+#fixed-bg img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+#fixed-bg video {
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+  border: 2px solid red;
+}
+
+<div class="latest-single">
+      <h2>So What!</h2>
+      <div class="iframe-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/F1eGu3iNqMI?si=zHQ2zkC14sfI8eVk"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
