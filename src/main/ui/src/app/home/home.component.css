@@ -76,6 +76,7 @@ h4 {
   width: 30%;
   height: auto;
   margin: 20px 0;
+  margin-bottom: 0px;
   margin-top: 150px;
   /* background-color: rgba(0, 0, 0, 0.568); /* */
   /* border: 2px solid orange; /* Add a border to the header */
@@ -191,13 +192,6 @@ h4 {
 
 #main-wrapper .credits {
   text-align: center;
-}
-
-#main-wrapper .manual-footer {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  /* border: 2px solid red; */
 }
 
 /* Responsive Design */
