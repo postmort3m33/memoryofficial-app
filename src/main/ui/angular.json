@@ -37,7 +37,8 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "https://loop1tickets.com/memory/BFE03012025/widget/v1.css"
             ],
             "scripts": []
           },

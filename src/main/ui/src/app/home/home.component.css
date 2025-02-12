@@ -97,6 +97,7 @@ h4 {
 /* Catagory Container */
 #category-container {
   position: relative;
+  text-align: center;
   /* border: 2px solid white; */
 }
 
